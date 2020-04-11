@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<face_id>
+
+	<system>
+		<id>Face_Id</id>
+		<ip>127.0.0.1</ip>
+		<ip_out>127.0.0.1</ip_out>
+		<port>8080</port>
+		<thr_num>3</thr_num>
+		<max_queue_size>100000</max_queue_size>
+		<TZ>Asia/Shanghai</TZ>		
+	</system>
+	
+	<model>
+		<recognizer>recognizer_model_v1.pb</recognizer>
+	</model>
+	
+	<mysql>
+		<svr mode="write" ip="127.0.0.1" port="3306" db="face_db" user="AIPlayer" pwd="123456" chars="utf8" num="5"/>
+	</mysql>
+	
+</face_id>
